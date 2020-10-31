@@ -36,6 +36,7 @@ function fetchResource(req, res) {
 			console.log("[SUCCESS]: requested", requestUrl);
 		}
 		if (err != null) { 
+			res.end("Page not found.");
 			console.error("[FAIL]: requested", requestUrl);
 		}
 	});
