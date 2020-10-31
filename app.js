@@ -3,8 +3,8 @@ const url = require("url");
 const fs = require("fs");
 const path = require("path");
 
-const hostname = "127.0.0.1";
-const port = 3000;
+const hostname = "127.0.0.1"; // idk
+const port = process.env.PORT || 5000;
 
 var workingDir = path.dirname(__filename);
 var homePage = workingDir + "\\client\\html\\index.html";
@@ -48,8 +48,8 @@ const server = http.createServer((req, res) => {
 	res.statusCode = 200;
 	res.setHeader("Content-Type", "text/html");
 	fetchResource(req, res);
-}).listen(port, hostname, () => {
-	console.log(`Server running at http://${hostname}:${port}/`);
+}).listen(port, () => {
+	console.log(`Server running at port ${port}/`);
 	console.log("Working dir: ", workingDir);
 	console.log("Homepage: ", homePage)
 });
