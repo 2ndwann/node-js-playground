@@ -1,0 +1,9 @@
+{
+	"name": "node-js-playground",
+	"version": "1.0.0",
+	"description": "A test/boilerplate node.js application",
+	"main": "app.js",
+	"scripts": {
+		"start": "npm run dev"
+	}
+}
