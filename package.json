@@ -1,9 +1,26 @@
 {
-	"name": "node-js-playground",
-	"version": "1.0.0",
-	"description": "A test/boilerplate node.js application",
-	"main": "app.js",
-	"scripts": {
-		"start": "npm run dev"
-	}
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "A test/boilerplate app for node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NyaNyaNekoJin/node-js-playground.git"
+  },
+  "author": "2ndwann#5534",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/NyaNyaNekoJin/node-js-playground/issues"
+  },
+  "homepage": "https://github.com/NyaNyaNekoJin/node-js-playground#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
 }
