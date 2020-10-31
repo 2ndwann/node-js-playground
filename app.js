@@ -7,7 +7,7 @@ const hostname = "127.0.0.1"; // idk
 const port = process.env.PORT || 5000;
 
 var workingDir = path.dirname(__filename);
-var homePage = workingDir + "\\client\\html\\index.html";
+var homePage = workingDir + "/client/html/index.html";
 
 function flipify(url) {
 	return url.replace(/\\/g, "/");
